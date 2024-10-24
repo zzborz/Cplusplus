@@ -1,0 +1,6 @@
+﻿  MainTest.cpp
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,23): error C7525: 内联变量至少需要 "/std:c++17"
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,23): error C2864: IDGenerator::s_nextID: 带有类内初始化表达式的静态 数据成员 必须具有不可变的常量整型类型，或必须被指定为“内联”
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,31):
+      类型是“int”
+  
