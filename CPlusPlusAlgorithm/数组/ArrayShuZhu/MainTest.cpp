@@ -1,21 +1,13 @@
 #include <iostream>
-
-class IDGenerator
-{
-private:
-    static inline int s_nextID{ 1 };
-
-public:
-    static int getNextID(); // Here's the declaration for a static function
-};
-
-// Here's the definition of the static function outside of the class.  Note we don't use the static keyword here.
-int IDGenerator::getNextID() { return s_nextID++; }
+#include <vector>
 
 int main()
 {
-    for (int count{ 0 }; count < 5; ++count)
-        std::cout << "The next ID is: " << IDGenerator::getNextID() << '\n';
+    std::vector primes{ 2, 3, 5, 7, 11 }; // hold the first 5 prime numbers (as int)
+
+    std::cout << "The first prime number is: " << primes[0] << '\n';
+    std::cout << "The second prime number is: " << primes[1] << '\n';
+    std::cout << "The sum of the first 5 primes is: " << primes[0] + primes[1] + primes[2] + primes[3] + primes[4] << '\n';
 
     return 0;
 }

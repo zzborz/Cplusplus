@@ -1,6 +1,149 @@
 ﻿  MainTest.cpp
-D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,23): error C7525: 内联变量至少需要 "/std:c++17"
-D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,23): error C2864: IDGenerator::s_nextID: 带有类内初始化表达式的静态 数据成员 必须具有不可变的常量整型类型，或必须被指定为“内联”
-      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,31):
-      类型是“int”
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,10): error C2955: “std::vector”: 使用 类 模板 需要 模板 参数列表
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(429,7):
+      参见“std::vector”的声明
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(6,23): error C2514: “std::vector”: 无法构建类模板
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(429,7):
+      参见“std::vector”的声明
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1895,40):
+      可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51):
+          “const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1885,34):
+      或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51):
+          “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(8,51):
+      尝试匹配参数列表“(std::vector, int)”时
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1895,40):
+      可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52):
+          “const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1885,34):
+      或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52):
+          “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(9,52):
+      尝试匹配参数列表“(std::vector, int)”时
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1895,40):
+      可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58):
+          “const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1885,34):
+      或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58):
+          “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,58):
+      尝试匹配参数列表“(std::vector, int)”时
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1895,40):
+      可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70):
+          “const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1885,34):
+      或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70):
+          “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,70):
+      尝试匹配参数列表“(std::vector, int)”时
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1895,40):
+      可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82):
+          “const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1885,34):
+      或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82):
+          “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,82):
+      尝试匹配参数列表“(std::vector, int)”时
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1895,40):
+      可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94):
+          “const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1885,34):
+      或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94):
+          “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,94):
+      尝试匹配参数列表“(std::vector, int)”时
+  
+D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1895,40):
+      可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106):
+          “const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\Program Files\Microsoft Visual Studio\2022\Preview\VC\Tools\MSVC\14.42.34321\include\vector(1885,34):
+      或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+          D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106):
+          “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\GitHub\Cplusplus\Cplusplus\CPlusPlusAlgorithm\数组\ArrayShuZhu\MainTest.cpp(10,106):
+      尝试匹配参数列表“(std::vector, int)”时
   
