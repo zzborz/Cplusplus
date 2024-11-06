@@ -957,3 +957,108 @@ b) 默认类型是什么`size_type`？是有符号的还是无符号的？
 c) 哪些函数可以获取容器返回的长度`size_type`？
 
 成员函数`size()`和`std::size`都返回`size_type`。
+
+## 16.4 — 传递 std::vector
+
+类型的对象`std::vector`可以像任何其他对象一样传递给函数。这意味着如果我们`std::vector`按值传递，则会进行昂贵的复制。因此，我们通常`std::vector`通过 (const) 引用传递以避免此类复制。
+
+对于 a 来说`std::vector`，元素类型是对象类型信息的一部分。因此，当我们使用 a`std::vector`作为函数参数时，我们必须明确指定元素类型：
+
+```c++
+#include <iostream>
+#include <vector>
+
+void passByRef(const std::vector<int>& arr) // we must explicitly specify <int> here
+{
+    std::cout << arr[0] << '\n';
+}
+
+int main()
+{
+    std::vector primes{ 2, 3, 5, 7, 11 };
+    passByRef(primes);
+
+    return 0;
+}
+```
+
+传递`std::vector`不同的元素类型
+
+因为我们的`passByRef()`函数需要一个`std::vector<int>`，所以我们无法传递具有不同元素类型的向量：
+
+```cpp
+#include <iostream>
+#include <vector>
+
+void passByRef(const std::vector<int>& arr)
+{
+    std::cout << arr[0] << '\n';
+}
+
+int main()
+{
+    std::vector primes{ 2, 3, 5, 7, 11 };
+    passByRef(primes);  // ok: this is a std::vector<int>
+
+    std::vector dbl{ 1.1, 2.2, 3.3 };
+    passByRef(dbl); // compile error: std::vector<double> is not convertible to std::vector<int>
+
+    return 0;
+}
+```
+
+在 C++17 或更新版本中，您可以尝试使用 CTAD 来解决此问题：
+
+```c++
+#include <iostream>
+#include <vector>
+
+void passByRef(const std::vector& arr) // compile error: CTAD can't be used to infer function parameters
+{
+    std::cout << arr[0] << '\n';
+}
+
+int main()
+{
+    std::vector primes{ 2, 3, 5, 7, 11 }; // okay: use CTAD to infer std::vector<int>
+    passByRef(primes);
+
+    return 0;
+}
+```
+
+尽管 CTAD 会在定义向量时从初始化器中推断出向量元素的类型，但 CTAD 目前还不适用于函数参数。
+
+我们以前见过这种问题，即我们重载了仅在参数类型上不同的函数。这是使用函数模板的好地方！我们可以创建一个参数化元素类型的函数模板，然后 C++ 将使用该函数模板实例化具有实际类型的函数。
+
+我们可以创建一个使用相同模板参数声明的函数模板：
+
+```cpp
+#include <iostream>
+#include <vector>
+
+template <typename T>
+void passByRef(const std::vector<T>& arr)
+{
+    std::cout << arr[0] << '\n';
+}
+
+int main()
+{
+    std::vector primes{ 2, 3, 5, 7, 11 };
+    passByRef(primes); // ok: compiler will instantiate passByRef(const std::vector<int>&)
+
+    std::vector dbl{ 1.1, 2.2, 3.3 };
+    passByRef(dbl);    // ok: compiler will instantiate passByRef(const std::vector<double>&)
+
+    return 0;
+}
+```
+
+在上面的例子中，我们创建了一个名为的单函数模板`passByRef()`，它有一个名为 的参数类型`const std::vector<T>&`。`T`它在上一行的模板参数声明中定义：`template <typename T`。`T`是一个标准类型模板参数，允许调用者指定元素类型。
+
+因此，当我们调用`passByRef(primes)`from `main()`（其中`primes`定义为`std::vector<int>`）时，编译器将实例化并调用`void passByRef(const std::vector<int>& arr)`。
+
+当我们调用`passByRef(dbl)`from `main()`（其中`dbl`定义为`std::vector<double>`）时，编译器将实例化并调用`void passByRef(const std::vector<double>& arr)`。
+
+因此，我们创建了一个单一函数模板，可以实例化函数来处理`std::vector`任何元素类型和长度的参数！
