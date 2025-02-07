@@ -78,7 +78,7 @@ int GetElem(LinkList L, int i, int& e)
 	e = p->data;
 	return OK;
 }
-//查找---按值查找，返回地址 --地址要用 指针形式返回
+//查找---按值查找，返回地址 --地址要用 指针形式返
 Lnode* LocateElem(LinkList L, int e)
 {
 	LinkList p;

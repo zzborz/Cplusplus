@@ -18,7 +18,7 @@
     <ClCompile Include="01_单链表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="02_双链表.cpp">
+    <ClCompile Include="02_单向循环链表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
