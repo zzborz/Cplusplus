@@ -182,7 +182,7 @@ void CreateListTail(LinkList& L,int n){//通过&返回链表
 		r = p;//将尾指针指向新节点，每连接上一个新结点，就把尾指针后移到新结点上，所以称之为尾指针
 	}
 }
-int main() {
+/*int main() {
 	LinkList L;
 	InitList(L);
 	CreateListTail(L, 5);
@@ -197,4 +197,4 @@ int main() {
 	PrintList(L);
 	DestoryList(L);
 	return 0;
-}
+}*/

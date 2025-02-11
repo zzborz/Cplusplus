@@ -183,7 +183,7 @@ public:
 };
 
 // Ö÷º¯Êý
-int main()
+/*int main()
 {
 	CircularLinkedList list;
 
@@ -264,3 +264,4 @@ int main()
 	system("pause");
 	return 0;
 }
+*/

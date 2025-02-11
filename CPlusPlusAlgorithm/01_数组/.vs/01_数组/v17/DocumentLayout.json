@@ -3,7 +3,13 @@
   "WorkspaceRootPath": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\01_\u6570\u7EC4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C97D9AD-E7D0-4592-97F4-0F96CB94129F}|..\\02_\u94FE\u8868\\02_\u94FE\u8868.vcxproj|D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\02_\u94FE\u8868\\02_\u5355\u5411\u5FAA\u73AF\u94FE\u8868.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}|..\\03_\u6808\\03_\u6808.vcxproj|D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\SeqStack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}|..\\03_\u6808\\03_\u6808.vcxproj|D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}|..\\03_\u6808\\03_\u6808.vcxproj|D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\03_\u987A\u5E8F\u6808.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +24,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "02_\u5355\u5411\u5FAA\u73AF\u94FE\u8868.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\02_\u94FE\u8868\\02_\u5355\u5411\u5FAA\u73AF\u94FE\u8868.cpp",
-              "RelativeDocumentMoniker": "..\\02_\u94FE\u8868\\02_\u5355\u5411\u5FAA\u73AF\u94FE\u8868.cpp",
-              "ToolTip": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\02_\u94FE\u8868\\02_\u5355\u5411\u5FAA\u73AF\u94FE\u8868.cpp",
-              "RelativeToolTip": "..\\02_\u94FE\u8868\\02_\u5355\u5411\u5FAA\u73AF\u94FE\u8868.cpp",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAYwAoBAAAAAAAAAAAAAA==",
+              "Title": "SeqStack.h",
+              "DocumentMoniker": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\SeqStack.h",
+              "RelativeDocumentMoniker": "..\\03_\u6808\\SeqStack.h",
+              "ToolTip": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\SeqStack.h",
+              "RelativeToolTip": "..\\03_\u6808\\SeqStack.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-11T15:31:05.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stack.h",
+              "DocumentMoniker": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\stack.h",
+              "RelativeDocumentMoniker": "..\\03_\u6808\\stack.h",
+              "ToolTip": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\stack.h",
+              "RelativeToolTip": "..\\03_\u6808\\stack.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-11T15:24:45.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "03_\u987A\u5E8F\u6808.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\03_\u987A\u5E8F\u6808.cpp",
+              "RelativeDocumentMoniker": "..\\03_\u6808\\03_\u987A\u5E8F\u6808.cpp",
+              "ToolTip": "D:\\GitHub\\Cplusplus\\Cplusplus\\CPlusPlusAlgorithm\\03_\u6808\\03_\u987A\u5E8F\u6808.cpp",
+              "RelativeToolTip": "..\\03_\u6808\\03_\u987A\u5E8F\u6808.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-06T14:24:38.198Z",
+              "WhenOpened": "2025-02-11T14:55:11.826Z",
               "EditorCaption": ""
             }
           ]

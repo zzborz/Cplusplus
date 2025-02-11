@@ -21,5 +21,11 @@
     <ClCompile Include="02_单向循环链表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="03_双向链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="04_双向循环链表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

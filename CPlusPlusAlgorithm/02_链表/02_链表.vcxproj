@@ -129,6 +129,8 @@
   <ItemGroup>
     <ClCompile Include="01_单链表.cpp" />
     <ClCompile Include="02_单向循环链表.cpp" />
+    <ClCompile Include="03_双向链表.cpp" />
+    <ClCompile Include="04_双向循环链表.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
