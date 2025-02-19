@@ -7,7 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_数组", "01_数组.vcxp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_链表", "..\02_链表\02_链表.vcxproj", "{8C97D9AD-E7D0-4592-97F4-0F96CB94129F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_栈", "..\03_栈\03_栈.vcxproj", "{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_顺序栈", "..\03_栈\03_栈.vcxproj", "{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_链式栈", "..\04_链式栈\04_链式栈.vcxproj", "{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_环形队列", "..\05_环形队列\05_环形队列.vcxproj", "{791356E7-1A34-492C-9F6D-74490FCFC0A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,22 @@ Global
 		{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}.Release|x64.Build.0 = Release|x64
 		{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}.Release|x86.ActiveCfg = Release|Win32
 		{CABC4559-02AB-4C94-BC8A-B6BD8FEDF643}.Release|x86.Build.0 = Release|Win32
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Debug|x64.ActiveCfg = Debug|x64
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Debug|x64.Build.0 = Debug|x64
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Debug|x86.ActiveCfg = Debug|Win32
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Debug|x86.Build.0 = Debug|Win32
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Release|x64.ActiveCfg = Release|x64
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Release|x64.Build.0 = Release|x64
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Release|x86.ActiveCfg = Release|Win32
+		{CCD36EAE-D9EF-4EEA-8812-CBF1B171074F}.Release|x86.Build.0 = Release|Win32
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Debug|x64.ActiveCfg = Debug|x64
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Debug|x64.Build.0 = Debug|x64
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Debug|x86.Build.0 = Debug|Win32
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Release|x64.ActiveCfg = Release|x64
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Release|x64.Build.0 = Release|x64
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Release|x86.ActiveCfg = Release|Win32
+		{791356E7-1A34-492C-9F6D-74490FCFC0A1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

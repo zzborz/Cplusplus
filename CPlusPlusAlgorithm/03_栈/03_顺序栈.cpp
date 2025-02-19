@@ -1,13 +1,13 @@
-#include<iostream>
+#include <iostream>
+#include "SeqStack.h"
 using namespace std;
-
-//Ë³ĞòÕ» c++ÈİÆ÷ÊÊÅäÆ÷ stack
-class SeqStack
+int main()
 {
-public:
+	SeqStack<int> stack1(60);
+	for (int i = 0; i < 60; i++)
+		stack1.Push(i);
 
+	cout << stack1;
 
-	//ÈëÕ»
-
-private:
-};
+	return 0;
+}
